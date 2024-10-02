@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Global MVM</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar-header">
+            <div class="logo">
+                <a href="{%url 'index'%}">
+                    <img src="../static/img/logo.png" alt="Logo Global MVM">
+                </a>
+            </div>
+            <div class="user-info">
+                <span class="user-name" id="userName">Hola </span>
+                <div class="user-profile" id="userProfileIcon">
+                    <img src="../static/img/user.jpg" alt="User Profile">
+                </div>
+                <div class="user-menu" id="userMenu">
+                    <a href="#" id="logoutButton">Cerrar sesión</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <nav class="navbar-nav">
+            <ul>
+                <li><a href="{%url 'onboarding'%}">Onboarding</a></li>
+                <li><a href="{%url 'tareas'%}">Tareas</a></li>
+                <li><a href="{%url 'agenda'%}">Agenda</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+
+        <main>
+            <section class="hero-section">
+                <div class="hero-overlay">
+                    <div class="hero-text">
+                        <h1>Bienvenidos a Global MVM</h1>
+                        <p>Soluciones digitales para una mejor energía</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about-section">
+                <h2>CONÓCENOS</h2>
+                <div class="about-content">
+                    <div class="about-item">
+                        <a href="https://www.globalmvm.com">
+                            <img src="../static/img/logo.png" alt="Logo Global MVM">
+                        </a>
+                        <h3>Somos Global MVM</h3>
+                        <p>Líderes en gestión de talentos excepcionales.</p>
+                    </div>
+                    <div class="about-item">
+                        <a href="{%url 'jovenesTalento'%}">
+                            <img src="../static/img/jovenest.png" alt="Jóvenes Talento">
+                        </a>
+                        <h3>Somos Jóvenes Talento</h3>
+                        <p>Transformando las oportunidades para las nuevas generaciones.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="contact-info">
+                <h4>CONTÁCTANOS</h4>
+                <p>📞 (57) 318 409 5193</p>
+                <p>📧 personasexcepcionales@globalmvm.com</p>
+            </div>
+            <div class="social-media">
+                <a href="#"><img src="../static/img/in.png" alt="LinkedIn"></a>
+                <a href="#"><img src="../static/img/x.png" alt="X"></a>
+                <a href="#"><img src="../static/img/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="../static/img/you.svg" alt="YouTube"></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>©2024 Global MVM. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Obtener el nombre de usuario del parámetro en la URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const email = urlParams.get('email');
+            const userName = email ? email.split('@')[0] : 'Usuario';
+            document.getElementById('userName').textContent = `Hola ${userName}`;
+
+            // Manejo del menú de usuario
+            const userProfileIcon = document.getElementById('userProfileIcon');
+            const userMenu = document.getElementById('userMenu');
+            const logoutButton = document.getElementById('logoutButton');
+
+            userProfileIcon.addEventListener('click', function(e) {
+                e.stopPropagation();
+                userMenu.style.display = userMenu.style.display === 'block' ? 'none' : 'block';
+            });
+
+            document.addEventListener('click', function(e) {
+                if (e.target !== userProfileIcon && e.target !== userMenu) {
+                    userMenu.style.display = 'none';
+                }
+            });
+
+            logoutButton.addEventListener('click', function(e) {
+                e.preventDefault();
+                // Aquí iría la lógica para cerrar sesión
+                alert('Cerrando sesión...');
+                window.location.href = "{%url 'login'%}"; // Redirige al login
+            });
+        });
+    </script>
+</body>
+</html>
