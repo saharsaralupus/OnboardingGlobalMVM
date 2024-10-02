@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onboarding</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar-header">
+            <div class="logo">
+                <a href="{%url 'index'%}">
+                    <img src="../static/img/logo.png" alt="Logo Global MVM">
+                </a>
+            </div>
+            <div class="user-info">
+                <span class="user-name" id="userName">Hola </span>
+                <div class="user-profile" id="userProfileIcon">
+                    <img src="../static/img/user.jpg" alt="User Profile">
+                </div>
+                <div class="user-menu" id="userMenu">
+                    <a href="#" id="logoutButton">Cerrar sesión</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <nav class="navbar-nav">
+            <ul>
+                <li><a href="{%url 'onboarding'%}">Onboarding</a></li>
+                <li><a href="{%url 'tareas'%}">Tareas</a></li>
+                <li><a href="{%url 'agenda'%}">Agenda</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="onboarding-content">
+        <h1>¿Cómo funciona nuestra metodología?</h1>
+        <h2>RUTAS DE APRENDIZAJE</h2>
+        
+        <div class="rutas-container">
+            <div class="ruta ruta1">
+                <h3>Ruta de valor</h3>
+                <p>Desarrollo de un reto de negocio</p>
+            </div>
+            <div class="ruta ruta2">
+                <h3>Ruta ser empresa</h3>
+                <p>Conexión con la estrategia y cultura de la empresa</p>
+            </div>
+            <div class="ruta ruta3">
+                <h3>Ruta conoce</h3>
+                <p>Desarrollo de una capacidad básica digital</p>
+            </div>
+            <div class="ruta ruta4">
+                <h3>Ruta ser</h3>
+                <p>Activación de la potencia personal del creador de soluciones</p>
+            </div>
+        </div>
+        
+        <div class="metodologia">
+            <h2>¿Cómo resolvemos cada reto?</h2>
+            <p class="metodologia-descripcion">Liberamos nuestro potencial con encuentros que activan el ser y nuestras habilidades de relacionamiento humano.</p>
+            
+            <div class="pasos">
+                <div class="paso descubre">
+                    <h3>Descubre</h3>
+                    <p>Elegimos un problema, oportunidad o necesidad. Entendemos el contexto. Identificamos las personas involucradas, generamos las primeras ideas de solución.</p>
+                </div>
+                <div class="paso imagina">
+                    <h3>Imagina</h3>
+                    <p>Generamos ideas de solución para el problema, oportunidad o necesidad, creamos los primeros diseños, validamos la propuesta con los clientes/usuarios.</p>
+                </div>
+                <div class="paso crea">
+                    <h3>Crea</h3>
+                    <p>Creamos la solución en su versión inicial. Preparamos el pitch final.</p>
+                </div>
+                <div class="paso celebra">
+                    <h3>Celebra</h3>
+                    <p>Presentamos nuestra propuesta de solución. Celebramos los logros alcanzados</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="familia-jovenes">
+            <h2>FAMILIA JÓVENES TALENTO</h2>
+            <div class="profiles">
+                <div class="profile">
+                    <div class="profile-frame green">
+                        <img src="../static/img/lidertecnico.jpg" alt="Rafael arango">
+                    </div>
+                    <div class="name">Rafael arango</div>
+                    <div class="role">Líder técnico</div>
+                </div>
+                <div class="profile">
+                    <div class="profile-frame blue">
+                        <img src="../static/img/educadora.jpg" alt="Claudia Perez">
+                    </div>
+                    <div class="name">Claudia Perez</div>
+                    <div class="role">Educadora</div>
+                </div>
+                <div class="profile">
+                    <div class="profile-frame purple">
+                        <img src="../static/img/recursoshumanos.png" alt="Rafael arango">
+                    </div>
+                    <div class="name">Rafael arango</div>
+                    <div class="role">Recursos humanos</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+    <h2>Bienvenidos aprendices</h2>
+    <div class="profiles">
+        <div class="profile">
+            <div class="profile-frame pink">
+                <img src="../static/img/sara.jpg" alt="Sara Cardona">
+            </div>
+            <div class="name">Sara Cardona</div>
+        </div>
+        <div class="profile">
+            <div class="profile-frame light-blue">
+                <img src="../static/img/jesus.jpg" alt="Jesus Tamayo">
+            </div>
+            <div class="name">Jesus Tamayo</div>
+        </div>
+        <div class="profile">
+            <div class="profile-frame light-green">
+                <img src="../static/img/yeimar.jpg" alt="Yeimar palacios">
+            </div>
+            <div class="name">Yeimar palacios</div>
+        </div>
+    </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="contact-info">
+                <h4>CONTÁCTANOS</h4>
+                <p>📞 (57) 318 409 5193</p>
+                <p>📧 personasexcepcionales@globalmvm.com</p>
+            </div>
+            <div class="social-media">
+                <a href="#"><img src="../static/img/in.png" alt="LinkedIn"></a>
+                <a href="#"><img src="../static/img/x.png" alt="X"></a>
+                <a href="#"><img src="../static/img/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="../static/img/you.svg" alt="YouTube"></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>©2024 Global MVM. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

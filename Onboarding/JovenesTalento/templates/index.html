@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jovenes Talento</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar-header">
+            <div class="logo">
+                <a href="{%url 'index'%}">
+                    <img src="../static/img/logo.png" alt="Logo Global MVM">
+                </a>
+            </div>
+            <div class="user-profile">
+                <a href="{%url 'login'%}">
+                    <img src="../static/img/user.jpg" alt="User Profile">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Section with Carousel -->
+    <section class="hero-section">
+        <div class="hero-overlay">
+            <div class="hero-text">
+                <h1>Bienvenidos a Global MVM</h1>
+                <p>Soluciones digitales para una mejor energia</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conocenos Section -->
+    <section class="about-section">
+        <h2>CONÓCENOS</h2>
+        <div class="about-content">
+            <div class="about-item">
+                <a href="https://www.globalmvm.com"> <!-- Agrega el enlace aquí -->
+                    <img src="../static/img/logo.png" alt="Logo Global MVM">
+                </a>
+                <h3>Somos Global MVM</h3>
+                <p>Líderes en gestión de talentos excepcionales.</p>
+            </div>
+            <div class="about-item">
+                <a href="{%url 'jovenesTalento'%}"> <!-- Agrega el enlace aquí -->
+                    <img src="../static/img/jovenest.png" alt="Jóvenes Talento">
+                </a>
+                <h3>Somos Jóvenes Talento</h3>
+                <p>Transformando las oportunidades para las nuevas generaciones.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="contact-info">
+                <h4>CONTÁCTANOS</h4>
+                <p>📞 (57) 318 409 5193</p>
+                <p>📧 personasexcepcionales@globalmvm.com</p>
+            </div>
+            <div class="social-media">
+                <a href="#"><img src="../static/img/in.png" alt="LinkedIn"></a>
+                <a href="#"><img src="../static/img/x.png" alt="X"></a>
+                <a href="#"><img src="../static/img/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="../static/img/you.svg" alt="YouTube"></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>©2024 Global MVM. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

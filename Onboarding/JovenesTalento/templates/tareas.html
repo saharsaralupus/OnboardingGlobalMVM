@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tareas</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+
+</head>
+<body>
+
+    <header>
+        <nav class="navbar-header">
+            <div class="logo">
+                <a href="{%url 'index'%}">
+                    <img src="../static/img/logo.png" alt="Logo Global MVM">
+                </a>
+            </div>
+            <div class="user-info">
+                <span class="user-name" id="userName">Hola </span>
+                <div class="user-profile" id="userProfileIcon">
+                    <img src="../static/img/user.jpg" alt="User Profile">
+                </div>
+                <div class="user-menu" id="userMenu">
+                    <a href="#" id="logoutButton">Cerrar sesión</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <nav class="navbar-nav">
+            <ul>
+                <li><a href="{%url 'onboarding'%}">Onboarding</a></li>
+                <li><a href="{%url 'tareas'%}">Tareas</a></li>
+                <li><a href="{%url 'agenda'%}">Agenda</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main class="section-jovenesTareas"></main>
+        <section class="jovenes1Tareas">
+          <img src="../static/img/somos.png" alt="imagen">
+          <div>
+            <h2 class="titulo">Asistencia en el Desarrollo de Software</h2>
+            <p class="parrafo">Colaborar con el equipo de desarrollo en la implementación de nuevas funcionalidades. 
+                Realizar pruebas y depuración de código para asegurar la calidad del software.</p>
+          </div>
+        </section>
+
+        <section class="jovenes2Tareas">
+            <div>
+                <h2 class="titulo">Investigación y Documentación</h2>
+                <p class="parrafo">Investigar nuevas tecnologías y prácticas recomendadas que puedan ser aplicadas en los proyectos actuales. 
+                    Documentar el código y los procedimientos para mantener un registro claro y accesible.</p>
+            </div>
+            <img src="../static/img/fundador.jpeg" alt="imagen">
+        </section>
+        
+        <section class="jovenes3Tareas">
+            <img src="../static/img/somos.png" alt="imagen">
+            <div>
+              <h2 class="titulo">Soporte Técnico</h2>
+              <p class="parrafo">Proporcionar soporte técnico básico a otros miembros del equipo.  
+                 Resolver problemas menores y ayudar en la resolución de incidencias bajo la supervisión de un mentor.</p>
+            </div>
+          </section>
+    </main>
+
+    <div class="tareas-content">
+        <h1>TECNOLOGÍAS, HERRAMIENTAS Y PLATAFORMAS</h1>
+        
+        <div class="tareas-container">
+            <div class="tareas ruta1">
+                <h3>Professional Developer</h3>
+                <p>Elaborar sistemas informáticos e implementarlos.</p>
+            </div>
+            <div class="tareas ruta2">
+                <h3>Complementary Skills</h3>
+                <p>Son aquellas que se potencian, equilibran o apoyan entre sí, creando una sinergia.</p>
+            </div>
+            <div class="tareas ruta3">
+                <h3>Front-end Developer</h3>
+                <p>Se refiere a la práctica de construir y diseñar la interfaz de usuario de un sitio web o aplicación.</p>
+            </div>
+            <div class="tareas ruta4">
+                <h3>Back-end Developer</h3>
+                <p>Crean y, posteriormente, mantienen las operaciones del lado del servidor de una aplicación.</p>
+            </div>
+        </div>
+        <div class="button-container">
+            <a href="https://mvm.talentlms.com" class="styled-button">Tus cursos disponibles aquí</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="contact-info">
+                <h4>CONTÁCTANOS</h4>
+                <p>📞 (57) 318 409 5193</p>
+                <p>📧 personasexcepcionales@globalmvm.com</p>
+            </div>
+            <div class="social-media">
+                <a href="#"><img src="../static/img/in.png" alt="LinkedIn"></a>
+                <a href="#"><img src="../static/img/x.png" alt="X"></a>
+                <a href="#"><img src="../static/img/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="../static/img/you.svg" alt="YouTube"></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>©2024 Global MVM. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
