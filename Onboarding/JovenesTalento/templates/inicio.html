@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio - Global MVM</title>
+    <link rel="stylesheet" href="../static/css bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="../static/css/styles.css">
 </head>
 <body>
@@ -29,6 +29,7 @@
     <div class="container">
         <nav class="navbar-nav">
             <ul>
+                <li><a href="{%url 'inicio'%}">Home</a></li>
                 <li><a href="{%url 'onboarding'%}">Onboarding</a></li>
                 <li><a href="{%url 'tareas'%}">Tareas</a></li>
                 <li><a href="{%url 'agenda'%}">Agenda</a></li>

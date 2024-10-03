@@ -5,6 +5,8 @@
     box-sizing: border-box;
 }
 
+
+
 /* Estilos del cuerpo */
 body {
     font-family: 'Arial', sans-serif;
@@ -26,7 +28,17 @@ header {
 
 .logo img {
     width: 100px;
+    right: 30px;
 }
+
+.icon-large {
+    color: black; /* Color inicial */
+    transition: color 0.3s ease; 
+}
+
+.icon:hover {
+    color: rgb(45, 42, 57); /* Color al pasar el ratón por encima */
+  }
 
 .user-profile img {
     width: 40px;
@@ -376,6 +388,7 @@ footer {
 
 .container {
     display: flex;
+    max-width: 100%;
     flex-direction: column;
     min-height: 10%;
     background: linear-gradient(to right,
@@ -403,12 +416,12 @@ footer {
     display: flex; /* Coloca los elementos de la lista en una fila horizontal */
     justify-content: center; /* Centra los elementos horizontalmente */
     align-items: center; /* Alinea verticalmente los elementos */
-    width: 100%; /* Asegura que ocupe todo el ancho */
+    max-width: 150%; /* Asegura que ocupe todo el ancho */
 }
 
 /* Espaciado entre los elementos de la lista */
 .navbar-nav li {
-    margin: 0 120px; /* Aumentado el espacio entre los elementos */
+    margin: 0 150px; /* Aumentado el espacio entre los elementos */
 }
 
 .navbar-nav a {
