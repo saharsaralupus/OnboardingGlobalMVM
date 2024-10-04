@@ -18,9 +18,12 @@
                 </a>
             </div>
             <div class="user-info">
-                <span class="user-name" id="userName">Hola </span>
+                <span class="user-name" id="name">Hola </span>
                 <div class="user-profile" id="userProfileIcon">
-                    <img src="../static/img/user.jpg" alt="User Profile">
+                    <svg xmlns="http://www.w3.org/2000/svg"  width="30" height="30" fill="currentColor" class="bi bi-person-circle icon" viewBox="0 0 16 16" color="black">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                      </svg>
                 </div>
                 <div class="user-menu" id="userMenu">
                     <a href="#" id="logoutButton">Cerrar sesión</a>
@@ -32,6 +35,7 @@
     <div class="container">
         <nav class="navbar-nav">
             <ul>
+                <li><a href="{%url 'inicio'%}">Home</a></li>
                 <li><a href="{%url 'onboarding'%}">Onboarding</a></li>
                 <li><a href="{%url 'tareas'%}">Tareas</a></li>
                 <li><a href="{%url 'agenda'%}">Agenda</a></li>
@@ -112,5 +116,6 @@
             <p>©2024 Global MVM. Todos los derechos reservados.</p>
         </div>
     </footer>
+    <script src="../static/js/user.js"></script>
 </body>
 </html>

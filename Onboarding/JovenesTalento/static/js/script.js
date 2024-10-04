@@ -41,6 +41,8 @@ function showEventForm(date) {
     eventInput.dataset.date = date;
 }
 
+
+
 addEventButton.onclick = () => {
     const date = eventInput.dataset.date;
     const eventDescription = eventInput.value;

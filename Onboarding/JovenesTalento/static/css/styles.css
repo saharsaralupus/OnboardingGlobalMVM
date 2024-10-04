@@ -24,6 +24,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 2%;
 }
 
 .logo img {
@@ -37,7 +38,7 @@ header {
 }
 
 .icon:hover {
-    color: rgb(45, 42, 57); /* Color al pasar el ratón por encima */
+    color: rgb(94, 91, 108); /* Color al pasar el ratón por encima */
   }
 
 .user-profile img {
@@ -416,12 +417,12 @@ footer {
     display: flex; /* Coloca los elementos de la lista en una fila horizontal */
     justify-content: center; /* Centra los elementos horizontalmente */
     align-items: center; /* Alinea verticalmente los elementos */
-    max-width: 150%; /* Asegura que ocupe todo el ancho */
+    max-width: 100%; /* Asegura que ocupe todo el ancho */
 }
 
 /* Espaciado entre los elementos de la lista */
 .navbar-nav li {
-    margin: 0 150px; /* Aumentado el espacio entre los elementos */
+    margin: 0 120px; /* Aumentado el espacio entre los elementos */
 }
 
 .navbar-nav a {
