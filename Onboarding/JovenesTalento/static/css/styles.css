@@ -84,7 +84,7 @@ header {
 .about-section {
     text-align: center;
     padding: 3rem 2rem;
-    background-color: #f8f8f8;
+    background-color: #ffffff;
 }
 
 .about-section h2 {
@@ -151,7 +151,7 @@ footer {
 }
 
 .contact-info h4 {
-    margin-bottom: 10px;
+    margin-bottom: 1px;
     font-size: 1.2rem;
     color: #000;
 }
@@ -161,13 +161,12 @@ footer {
     color: #000;
 }
 
-.social-media a img {
-    width: 30px;
-    margin: 0 10px;
-    transition: opacity 0.3s;
+.social-media svg {
+    margin: 0 15px;
+    transition: opacity 0.3s;  
 }
 
-.social-media a img:hover {
+.social-media svg:hover {
     opacity: 0.8;
 }
 
@@ -257,6 +256,10 @@ footer {
     padding: 1rem;
     margin: 2rem auto;
   }
+
+ .contenedor{
+    width: 200px;
+ }
   
   /* Media query para pantallas más pequeñas */
   @media (max-width: 768px) {
@@ -389,24 +392,16 @@ footer {
 
 .container {
     display: flex;
-    max-width: 100%;
+    max-width: 120%;
     flex-direction: column;
     min-height: 10%;
-    background: linear-gradient(to right,
-         #7fc6fa,
-         #f981f5,
-         #7a87f8,
-         #80fb95,
-         #7e8af5,
-        #f47ef0
-    );
+    background: transparent;
     text-align: center;
 }
 
 /* Estilo para la barra de navegación */
 .navbar-nav {
     padding: 15px 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
 }
 
 /* Estilos del UL (lista de navegación) */
@@ -422,20 +417,22 @@ footer {
 
 /* Espaciado entre los elementos de la lista */
 .navbar-nav li {
-    margin: 0 120px; /* Aumentado el espacio entre los elementos */
+    margin: 0 50px; /* Aumentado el espacio entre los elementos */
+
 }
 
 .navbar-nav a {
     text-decoration: none; /* Elimina el subrayado */
     color: #333;
     font-size: 16px;
+    font-family: "Questrial", Sans-serif;
     font-weight: bold;
     transition: color 0.3s ease; /* Transición suave para el cambio de color */
 }
 
 /* Cambia el color del enlace cuando pasas el ratón por encima */
 .navbar-nav a:hover {
-    color: #000000; /* Color al hacer hover */
+    color: #3c00ff; /* Color al hacer hover */
 }
 
 /* Oscurecer el enlace al hacer clic */
