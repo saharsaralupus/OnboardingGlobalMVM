@@ -23,3 +23,6 @@ def onboardingView(request):
 
 def tareasView(request):
      return render(request, 'tareas.html')
+
+def usuariosView(request):
+     return render(request, 'usuarios.html')
