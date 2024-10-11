@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
+</head>
+<body>
+    <main>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#crearUsuario"><i class="fas fa-plus"></i></button>
+
+        <div class="modal fade" id="crearUsuario" tabindex="-1" role="dialog" aria-labelledby="crearUsuarioLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="crearUsuarioLabel">Nuevo usuario</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="needs-validation" novalidate>
+                            <div class="form-row">
+                                <div class="col-md-4 mb-3">
+                                    <label for="name">Nombre</label>
+                                    <input type="text" class="form-control" id="name" placeholder="First name"
+                                        required>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label for="lastname">Apellido</label>
+                                    <input type="text" class="form-control" id="lastname" placeholder="Last name"
+                                        required>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label for="email">Correo</label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="email">@</span>
+                                        </div>
+                                        <input type="text" class="form-control" id="email" placeholder="Username"
+                                            aria-describedby="validationTooltipUsernamePrepend" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="rol">Rol</label>
+                                    <input type="text" class="form-control" id="rol" placeholder="City"
+                                        value="APRENDIZ" required>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <label for="date">Fecha inicio</label>
+                                    <input type="date" class="form-control" id="date" placeholder="State" required>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <label for="phone">Telefono</label>
+                                    <input type="text" class="form-control" id="phone" placeholder="phone" required>
+                                </div>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                <label class="custom-control-label" for="customCheck1">¿Se encuentra activo?</label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-warning" data-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-success">Crear usuario</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
