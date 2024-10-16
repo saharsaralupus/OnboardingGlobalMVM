@@ -480,7 +480,7 @@ a:hover {
     display: flex; /* Coloca los elementos de la lista en una fila horizontal */
     justify-content: center; /* Centra los elementos horizontalmente */
     align-items: center; /* Alinea verticalmente los elementos */
-    width: 100%; /* Asegura que ocupe todo el ancho */
+    width: 90%; /* Asegura que ocupe todo el ancho */
 }
 
 /* Espaciado entre los elementos de la lista */

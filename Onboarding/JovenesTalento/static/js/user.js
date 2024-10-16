@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
         e.preventDefault();
         // Aquí iría la lógica para cerrar sesión
         alert('Cerrando sesión...');
-        window.location.href = "http://127.0.0.1:8000/login/"; // Redirige al login
+        window.location.href = "https://onboarding-ashen.vercel.app/"; // Redirige al login
     });
 });
 
