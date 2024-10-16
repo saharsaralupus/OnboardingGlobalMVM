@@ -52,7 +52,7 @@ body {
 
 .user-profile img {
     width: 40px;
-    border-radius: 50%;
+    border-radius: 40%;
     cursor: pointer;
 }
 
@@ -420,10 +420,26 @@ a:hover {
     margin-right: 10px;
     font-weight: bold;
 }
-.user-profile {
+
+.user-profile{
     cursor: pointer;
     flex-direction: column;
 }
+
+.user-profile-index {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-profile-index svg {
+    position: relative;
+    left: 0; /* Eliminamos el desplazamiento a la izquierda */
+}
+
 .user-menu {
     display: none;
     position: absolute;
@@ -469,7 +485,7 @@ a:hover {
 
 /* Estilo para la barra de navegación */
 .navbar-nav {
-    padding: 15px 0;
+    padding: 15px 10px;
 }
 
 /* Estilos del UL (lista de navegación) */
@@ -480,7 +496,7 @@ a:hover {
     display: flex; /* Coloca los elementos de la lista en una fila horizontal */
     justify-content: center; /* Centra los elementos horizontalmente */
     align-items: center; /* Alinea verticalmente los elementos */
-    width: 90%; /* Asegura que ocupe todo el ancho */
+    width: 100%; /* Asegura que ocupe todo el ancho */
 }
 
 /* Espaciado entre los elementos de la lista */
